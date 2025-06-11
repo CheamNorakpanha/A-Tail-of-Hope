@@ -22,24 +22,24 @@ function App() {
 
               {/* Desktop Navigation */}
               <nav className="hidden md:flex items-center space-x-8">
-                <ScrollLink to="#about" className="text-sm font-medium transition-colors hover:text-emerald-600 mr-0">
+                <ScrollLink to="#about" className="text-md font-medium transition-colors hover:text-emerald-600 mr-0">
                   About
                 </ScrollLink>
-                <ScrollLink to="#team" className="text-sm font-medium transition-colors hover:text-emerald-600">Team
+                <ScrollLink to="#team" className="text-md font-medium transition-colors hover:text-emerald-600">Team
                 </ScrollLink>
-                <ScrollLink to="#issue" className="text-sm font-medium transition-colors hover:text-emerald-600">
+                <ScrollLink to="#issue" className="text-md font-medium transition-colors hover:text-emerald-600">
                   The Issue
                 </ScrollLink>
-                <ScrollLink to="#mission" className="text-sm font-medium transition-colors hover:text-emerald-600">
+                <ScrollLink to="#mission" className="text-md font-medium transition-colors hover:text-emerald-600">
                   Our Mission
                 </ScrollLink>
-                <ScrollLink to="#contact" className="text-sm font-medium transition-colors hover:text-emerald-600">
+                <ScrollLink to="#contact" className="text-md font-medium transition-colors hover:text-emerald-600">
                   Contact
                 </ScrollLink>
               </nav>
 
               <div className="hidden md:flex items-center">
-                <button className="border bg-emerald-600 text-white hover:bg-emerald-700 px-6 py-2 rounded-md font-medium transition-colors">Get Involved</button>
+                <button className="border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 px-6 py-2 rounded-md font-medium transition-colors">Get Involved</button>
               </div>
 
               {/* Mobile menu button */}
@@ -94,7 +94,7 @@ function App() {
                     Contact
                   </Link>
                   <div className="px-3 py-2">
-                    <button className="w-full bg-emerald-600 hover:bg-emerald-700">Get Involved</button>
+                    <button className="w-full border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 px-6 py-2 rounded-md font-medium transition-colors">Get Involved</button>
                   </div>
                 </div>
               </div>
@@ -118,7 +118,7 @@ function App() {
                     </p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <button className="bg-emerald-600 text-white px-10 py-2 rounded-md font-medium hover:bg-emerald-700 transition-colors flex items-center">
+                    <button className="bg-emerald-600 text-white px-10 py-2 rounded-md font-medium hover:bg-emerald-700 transition-colors flex items-center justify-center">
                       Learn More
                       <ChevronRight className="ml-4 h-4 w-4" />
                     </button>
@@ -155,15 +155,15 @@ function App() {
 
               <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
                 <div className="order-2 lg:order-1">
-                    <div className="aspect-video w-full overflow-hidden rounded-xl">
+                  <div className="aspect-video w-full overflow-hidden rounded-xl">
                     <img
-                      src="https://plus.unsplash.com/premium_photo-1680807897556-03769be7b0e2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       width={600}
                       height={400}
                       alt="Students conducting research"
                       className="h-full w-full object-cover"
                     />
-                    </div>
+                  </div>
                 </div>
                 <div className="order-1 lg:order-2 space-y-6">
                   <div className="space-y-4">
@@ -392,7 +392,7 @@ function App() {
                   <p className="text-gray-600 mb-6">
                     Support our initiative financially to help fund our research and awareness campaigns.
                   </p>
-                  <button className="w-full bg-emerald-600 hover:bg-emerald-700">Donate Now</button>
+                  <button className="w-full text-white bg-emerald-600 hover:bg-emerald-700 px-6 py-2 rounded-md font-medium transition-colors">Donate Now</button>
                 </div>
 
                 <div className="bg-white rounded-lg p-6 shadow-sm border text-center sm:col-span-2 lg:col-span-1">
@@ -594,7 +594,7 @@ function App() {
                         placeholder="Enter your message"
                       ></textarea>
                     </div>
-                    <button className="w-full bg-emerald-600 hover:bg-emerald-700">Send Message</button>
+                    <button className="w-full text-white bg-emerald-600 hover:bg-emerald-700 px-6 py-2 rounded-md font-medium transition-colors">Send Message</button>
                   </form>
                 </div>
               </div>
