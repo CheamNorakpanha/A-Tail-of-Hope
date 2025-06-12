@@ -1,8 +1,7 @@
 import './App.css';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Heart, Shield, Users, Menu, X } from "lucide-react"
 import { useState } from "react"
-import { Link as ScrollLink } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,7 +14,6 @@ function App() {
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center">
                 <Link to="/" className="flex items-center space-x-2">
-                  {/* <PawPrint className="h-6 w-6 text-emerald-600" /> */}
                   <img
                     alt='A Tail of Hope Logo'
                     src={require('./atoh_logo_removebg.png')}
@@ -27,24 +25,26 @@ function App() {
 
               {/* Desktop Navigation */}
               <nav className="hidden md:flex items-center space-x-8">
-                <ScrollLink to="#about" className="text-md font-medium transition-colors hover:text-emerald-600 mr-0">
+                <Link to="about" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-emerald-600 mr-0">
                   About
-                </ScrollLink>
-                <ScrollLink to="#team" className="text-md font-medium transition-colors hover:text-emerald-600">Team
-                </ScrollLink>
-                <ScrollLink to="#issue" className="text-md font-medium transition-colors hover:text-emerald-600">
+                </Link>
+                <Link to="team" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-emerald-600">Team
+                </Link>
+                <Link to="issue" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-emerald-600">
                   The Issue
-                </ScrollLink>
-                <ScrollLink to="#mission" className="text-md font-medium transition-colors hover:text-emerald-600">
+                </Link>
+                <Link to="mission" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-emerald-600">
                   Our Mission
-                </ScrollLink>
-                <ScrollLink to="#contact" className="text-md font-medium transition-colors hover:text-emerald-600">
+                </Link>
+                <Link to="contact" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-emerald-600">
                   Contact
-                </ScrollLink>
+                </Link>
               </nav>
 
               <div className="hidden md:flex items-center">
-                <button className="border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 px-6 py-2 rounded-md font-medium transition-colors">Get Involved</button>
+                <Link to="get-involved" smooth={true} duration={500} >
+                  <button className="border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 px-6 py-2 rounded-md font-medium transition-colors">Get Involved</button>
+                </Link>
               </div>
 
               {/* Mobile menu button */}
@@ -123,13 +123,17 @@ function App() {
                     </p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <button className="bg-emerald-600 text-white px-10 py-2 rounded-md font-medium hover:bg-emerald-700 transition-colors flex items-center justify-center">
-                      Learn More
-                      <ChevronRight className="ml-4 h-4 w-4" />
-                    </button>
-                    <button className="border border-emerald-600 text-emerald-600 bg-white hover:bg-emerald-50 px-6 py-2 rounded-md font-medium transition-colors">
-                      Support Our Cause
-                    </button>
+                    <Link to="about" smooth={true} duration={500} >
+                      <button className="bg-emerald-600 text-white px-10 py-2 rounded-md font-medium hover:bg-emerald-700 transition-colors flex items-center justify-center">
+                        Learn More
+                        <ChevronRight className="ml-4 h-4 w-4" />
+                      </button>
+                    </Link>
+                    <Link to="get-involved" smooth={true} duration={500} >
+                      <button className="border border-emerald-600 text-emerald-600 bg-white hover:bg-emerald-50 px-6 py-2 rounded-md font-medium transition-colors">
+                        Support Our Project
+                      </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="order-first lg:order-last">
@@ -171,25 +175,25 @@ function App() {
                   </div>
                 </div>
                 <div className="order-1 lg:order-2 space-y-6">
-                  <div className="space-y-4">
+                  <div className="space-y-2">
                     <h3 className="text-xl font-bold">Our Background</h3>
                     <p className="text-gray-600">
-                      Founded by passionate students concerned about animal welfare in Cambodia, our initiative aims to
-                      address the growing issue of dog meat consumption.
+                      Our initiative was founded out of concern for animal welfare and the growing issue of dog meat trade in Cambodia. Seeing its impact on animals and communities,
+                      we aim to inform the public, advocate for better regulations, and support humane treatment of dogs.
                     </p>
                   </div>
-                  <div className="space-y-4">
+                  <div className="space-y-2">
                     <h3 className="text-xl font-bold">Research Focus</h3>
                     <p className="text-gray-600">
-                      We conduct comprehensive research on the dog meat trade in Kampot Province, documenting cases and
-                      understanding the underlying factors.
+                      We focus on the social, cultural, and economic factors behind the dog meat trade in Kampot Province. Our research explores public perceptions, health risks, and
+                      the emotional impact on pet owners, with the goal of offering practical solutions to reduce the trade and promote responsible pet ownership.
                     </p>
                   </div>
-                  <div className="space-y-4">
+                  <div className="space-y-2">
                     <h3 className="text-xl font-bold">Our Team</h3>
                     <p className="text-gray-600">
-                      Our team consists of dedicated IFL senior students with expertise in research, animal welfare, and
-                      community outreach.
+                      We are senior IFL students, united by our passion for animal welfare. Working together with local communities, animal rescue groups, and experts, we strive to
+                      ensure our research creates meaningful change.
                     </p>
                   </div>
                 </div>
@@ -372,7 +376,7 @@ function App() {
           </section>
 
           {/* Get Involved Section */}
-          <section className="w-full py-12 md:py-16 lg:py-20 bg-emerald-50">
+          <section id='get-involved' className="w-full py-12 md:py-16 lg:py-20 bg-emerald-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">Get Involved</h2>
