@@ -1,6 +1,6 @@
 import './App.css';
 import { Link } from 'react-router-dom';
-import { ChevronRight, Heart, PawPrint, Shield, Users, Menu, X } from "lucide-react"
+import { ChevronRight, Heart, Shield, Users, Menu, X } from "lucide-react"
 import { useState } from "react"
 import { Link as ScrollLink } from 'react-scroll'
 
@@ -15,7 +15,12 @@ function App() {
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center">
                 <Link to="/" className="flex items-center space-x-2">
-                  <PawPrint className="h-6 w-6 text-emerald-600" />
+                  {/* <PawPrint className="h-6 w-6 text-emerald-600" /> */}
+                  <img
+                    alt='A Tail of Hope Logo'
+                    src={require('./atoh_logo_removebg.png')}
+                    className='h-12 w-12'
+                  />
                   <span className="text-lg font-bold">A Tail of Hope</span>
                 </Link>
               </div>
@@ -509,7 +514,7 @@ function App() {
                           />
                         </svg>
                       </div>
-                      <span className="text-gray-600">+855 12 345 678</span>
+                      <span className="text-gray-600">+855 95 987 014</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-5 h-5 text-emerald-600">
@@ -522,7 +527,7 @@ function App() {
                           />
                         </svg>
                       </div>
-                      <span className="text-gray-600">info@atailofhope.org</span>
+                      <span className="text-gray-600">tailofhope88@gmail.com</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-5 h-5 text-emerald-600">
@@ -541,7 +546,7 @@ function App() {
                           />
                         </svg>
                       </div>
-                      <span className="text-gray-600">Kampot Province, Cambodia</span>
+                      <span className="text-gray-600">Russian Federation Blvd (110), Phnom Penh 120404</span>
                     </div>
                   </div>
                 </div>
@@ -607,7 +612,7 @@ function App() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-sm text-gray-500 text-center md:text-left">
-                © 2025 A Tail of Hope. All rights reserved.
+                © 2025 A Tail of Hope | All rights reserved.
               </p>
               <div className="flex items-center space-x-4">
                 <Link to="#" className="text-gray-400 hover:text-emerald-600 transition-colors">
