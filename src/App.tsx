@@ -25,25 +25,25 @@ function App() {
 
               {/* Desktop Navigation */}
               <nav className="hidden md:flex items-center space-x-8">
-                <Link to="about" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-emerald-600 mr-0">
+                <Link to="about" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-yellow-700 mr-0">
                   About
                 </Link>
-                <Link to="team" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-emerald-600">Team
+                <Link to="team" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-yellow-700">Team
                 </Link>
-                <Link to="issue" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-emerald-600">
+                <Link to="issue" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-yellow-700">
                   The Issue
                 </Link>
-                <Link to="mission" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-emerald-600">
+                <Link to="mission" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-yellow-700">
                   Our Mission
                 </Link>
-                <Link to="contact" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-emerald-600">
+                <Link to="contact" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-yellow-700">
                   Contact
                 </Link>
               </nav>
 
               <div className="hidden md:flex items-center">
                 <Link to="get-involved" smooth={true} duration={500} >
-                  <button className="border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 px-6 py-2 rounded-md font-medium transition-colors">Get Involved</button>
+                  <button className="border-yellow-700 bg-yellow-700 text-white hover:bg-yellow-800 px-6 py-2 rounded-md font-medium transition-colors">Get Involved</button>
                 </Link>
               </div>
 
@@ -52,7 +52,7 @@ function App() {
                 <button
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                   aria-label="Toggle menu"
-                  className="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  className="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-700"
                 >
                   {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                 </button>
@@ -65,41 +65,41 @@ function App() {
                 <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t">
                   <Link
                     to="#about"
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-emerald-600"
+                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     About
                   </Link>
                   <Link
                     to="#team"
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-emerald-600"
+                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Team
                   </Link>
                   <Link
                     to="#issue"
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-emerald-600"
+                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     The Issue
                   </Link>
                   <Link
                     to="#mission"
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-emerald-600"
+                    className="block px-3 py-2 text-base font-medium transition-colors hover:yellow-700"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Our Mission
                   </Link>
                   <Link
                     to="#contact"
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-emerald-600"
+                    className="block px-3 py-2 text-base font-medium transition-colors hover:yellow-700"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Contact
                   </Link>
                   <div className="px-3 py-2">
-                    <button className="w-full border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 px-6 py-2 rounded-md font-medium transition-colors">Get Involved</button>
+                    <button className="w-full border-yellow-700 bg-yellow-700 text-white hover:bg-yellow-800 px-6 py-2 rounded-md font-medium transition-colors">Get Involved</button>
                   </div>
                 </div>
               </div>
@@ -109,7 +109,7 @@ function App() {
 
         <main className="flex-1">
           {/* Hero Section */}
-          <section className="w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-emerald-50">
+          <section className="w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-yellow-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
                 <div className="flex flex-col justify-center space-y-6">
@@ -124,13 +124,13 @@ function App() {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Link to="about" smooth={true} duration={500} >
-                      <button className="bg-emerald-600 text-white px-10 py-2 rounded-md font-medium hover:bg-emerald-700 transition-colors flex items-center justify-center">
+                      <button className="bg-yellow-700 text-white px-10 py-2 rounded-md font-medium hover:bg-yellow-800 transition-colors flex items-center justify-center">
                         Learn More
                         <ChevronRight className="ml-4 h-4 w-4" />
                       </button>
                     </Link>
                     <Link to="get-involved" smooth={true} duration={500} >
-                      <button className="border border-emerald-600 text-emerald-600 bg-white hover:bg-emerald-50 px-6 py-2 rounded-md font-medium transition-colors">
+                      <button className="border border-yellow-700 text-yellow-700 bg-white hover:bg-yellow-50 px-6 py-2 rounded-md font-medium transition-colors">
                         Support Our Project
                       </button>
                     </Link>
@@ -225,7 +225,7 @@ function App() {
                     </div>
                     <div className="space-y-2">
                       <h3 className="text-xl font-bold">Visnow Navyra</h3>
-                      <p className="text-emerald-600 font-medium">Leader/Project Manager</p>
+                      <p className="text-yellow-700 font-medium">Leader/Project Manager</p>
                       <p className="text-gray-600 text-sm leading-relaxed">
                         Navyra is a senior student at IFL and NUM, who determines in studying and joining volunteer in
                         promoting educational programs. Currently, she is interested about understanding the value of
@@ -278,8 +278,8 @@ function App() {
 
               <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-12">
                 <div className="bg-white rounded-lg p-6 shadow-sm border text-center">
-                  <div className="w-12 h-12 mx-auto mb-4 bg-emerald-100 rounded-full flex items-center justify-center">
-                    <Shield className="h-6 w-6 text-emerald-600" />
+                  <div className="w-12 h-12 mx-auto mb-4 bg-yellow-100 rounded-full flex items-center justify-center">
+                    <Shield className="h-6 w-6 text-yellow-600" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">Health Risks</h3>
                   <p className="text-gray-600">
@@ -289,8 +289,8 @@ function App() {
                 </div>
 
                 <div className="bg-white rounded-lg p-6 shadow-sm border text-center">
-                  <div className="w-12 h-12 mx-auto mb-4 bg-emerald-100 rounded-full flex items-center justify-center">
-                    <Heart className="h-6 w-6 text-emerald-600" />
+                  <div className="w-12 h-12 mx-auto mb-4 bg-yellow-100 rounded-full flex items-center justify-center">
+                    <Heart className="h-6 w-6 text-yellow-600" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">Emotional Impact</h3>
                   <p className="text-gray-600">
@@ -300,8 +300,8 @@ function App() {
                 </div>
 
                 <div className="bg-white rounded-lg p-6 shadow-sm border text-center sm:col-span-2 lg:col-span-1">
-                  <div className="w-12 h-12 mx-auto mb-4 bg-emerald-100 rounded-full flex items-center justify-center">
-                    <Users className="h-6 w-6 text-emerald-600" />
+                  <div className="w-12 h-12 mx-auto mb-4 bg-yellow-100 rounded-full flex items-center justify-center">
+                    <Users className="h-6 w-6 text-yellow-600" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">Lack of Regulation</h3>
                   <p className="text-gray-600">
@@ -376,7 +376,7 @@ function App() {
           </section>
 
           {/* Get Involved Section */}
-          <section id='get-involved' className="w-full py-12 md:py-16 lg:py-20 bg-emerald-50">
+          <section id='get-involved' className="w-full py-12 md:py-16 lg:py-20 bg-yellow-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">Get Involved</h2>
@@ -391,7 +391,7 @@ function App() {
                   <p className="text-gray-600 mb-6">
                     Join our team of volunteers and help with research, outreach, and awareness campaigns.
                   </p>
-                  <button className="w-full border border-emerald-600 text-emerald-600 bg-white hover:bg-emerald-50 px-6 py-2 rounded-md font-medium transition-colors">
+                  <button className="w-full border border-yellow-700 text-yellow-700 bg-white hover:bg-yellow-50 px-6 py-2 rounded-md font-medium transition-colors">
                     Sign Up
                   </button>
                 </div>
@@ -401,7 +401,7 @@ function App() {
                   <p className="text-gray-600 mb-6">
                     Support our initiative financially to help fund our research and awareness campaigns.
                   </p>
-                  <button className="w-full text-white bg-emerald-600 hover:bg-emerald-700 px-6 py-2 rounded-md font-medium transition-colors">Donate Now</button>
+                  <button className="w-full text-white bg-yellow-700 hover:bg-yellow-800 px-6 py-2 rounded-md font-medium transition-colors">Donate Now</button>
                 </div>
 
                 <div className="bg-white rounded-lg p-6 shadow-sm border text-center sm:col-span-2 lg:col-span-1">
@@ -409,7 +409,7 @@ function App() {
                   <p className="text-gray-600 mb-6">
                     Share our message on social media and help us reach a wider audience.
                   </p>
-                  <button className="w-full border border-emerald-600 text-emerald-600 bg-white hover:bg-emerald-50 px-6 py-2 rounded-md font-medium transition-colors">
+                  <button className="w-full border border-yellow-700 text-yellow-700 bg-white hover:bg-yellow-50 px-6 py-2 rounded-md font-medium transition-colors">
                     Share
                   </button>
                 </div>
@@ -430,7 +430,7 @@ function App() {
               <div className="grid gap-8 lg:grid-cols-2 mb-8">
                 <div className="bg-white rounded-lg p-6 shadow-sm border">
                   <div className="space-y-4">
-                    <div className="text-emerald-600">
+                    <div className="text-yellow-700">
                       <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
                       </svg>
@@ -443,8 +443,8 @@ function App() {
                       how far their impact will reach."
                     </blockquote>
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
-                        <span className="text-emerald-600 font-semibold">S</span>
+                      <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                        <span className="text-yellow-700 font-semibold">S</span>
                       </div>
                       <div>
                         <p className="font-semibold">Sokun</p>
@@ -456,7 +456,7 @@ function App() {
 
                 <div className="bg-white rounded-lg p-6 shadow-sm border">
                   <div className="space-y-4">
-                    <div className="text-emerald-600">
+                    <div className="text-yellow-700">
                       <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
                       </svg>
@@ -469,8 +469,8 @@ function App() {
                       Dirty Paw Cambodia truly set them apart."
                     </blockquote>
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
-                        <span className="text-emerald-600 font-semibold">R</span>
+                      <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                        <span className="text-yellow-700 font-semibold">R</span>
                       </div>
                       <div>
                         <p className="font-semibold">Rithy</p>
@@ -482,7 +482,7 @@ function App() {
               </div>
 
               <div className="text-center">
-                <button className="border border-emerald-600 text-emerald-600 bg-white hover:bg-emerald-50 px-6 py-2 rounded-md font-medium transition-colors">
+                <button className="border border-yellow-700 text-yellow-700 bg-white hover:bg-yellow-50 px-6 py-2 rounded-md font-medium transition-colors">
                   Share Your Feedback
                 </button>
               </div>
@@ -508,7 +508,7 @@ function App() {
 
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
-                      <div className="w-5 h-5 text-emerald-600">
+                      <div className="w-5 h-5 text-yellow-700">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path
                             strokeLinecap="round"
@@ -521,7 +521,7 @@ function App() {
                       <span className="text-gray-600">+855 95 987 014</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-5 h-5 text-emerald-600">
+                      <div className="w-5 h-5 text-yellow-700">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path
                             strokeLinecap="round"
@@ -534,7 +534,7 @@ function App() {
                       <span className="text-gray-600">tailofhope88@gmail.com</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-5 h-5 text-emerald-600">
+                      <div className="w-5 h-5 text-yellow-700">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path
                             strokeLinecap="round"
@@ -565,7 +565,7 @@ function App() {
                         <input
                           id="first-name"
                           type="text"
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600"
                           placeholder="Enter your first name"
                         />
                       </div>
@@ -576,7 +576,7 @@ function App() {
                         <input
                           id="last-name"
                           type="text"
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600"
                           placeholder="Enter your last name"
                         />
                       </div>
@@ -588,7 +588,7 @@ function App() {
                       <input
                         id="email"
                         type="email"
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600"
                         placeholder="Enter your email"
                       />
                     </div>
@@ -599,11 +599,11 @@ function App() {
                       <textarea
                         id="message"
                         rows={4}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600"
                         placeholder="Enter your message"
                       ></textarea>
                     </div>
-                    <button className="w-full text-white bg-emerald-600 hover:bg-emerald-700 px-6 py-2 rounded-md font-medium transition-colors">Send Message</button>
+                    <button className="w-full text-white bg-yellow-700 hover:bg-yellow-800 px-6 py-2 rounded-md font-medium transition-colors">Send Message</button>
                   </form>
                 </div>
               </div>
