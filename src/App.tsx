@@ -258,9 +258,9 @@ function App() {
                       <h3 className="text-xl font-bold">An Sereypanharoth</h3>
                       <p className="text-yellow-700 font-medium">Monitoring and Evaluation Officer</p>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        Panharoth is a student at IFL and RUPP who is strongly fighting against the dog meat trade. Concerned 
-                        about the treatment of dogs, Panharoth is dedicated to raising awareness and promoting change through 
-                        the Tail of Hope project. Excited to work with his team, she hopes to inspire more people to stand against 
+                        Panharoth is a student at IFL and RUPP who is strongly fighting against the dog meat trade. Concerned
+                        about the treatment of dogs, Panharoth is dedicated to raising awareness and promoting change through
+                        the Tail of Hope project. Excited to work with his team, she hopes to inspire more people to stand against
                         the cruelty of the dog meat trade.
                       </p>
                     </div>
@@ -283,8 +283,8 @@ function App() {
                       <h3 className="text-xl font-bold">Sry Thaiseang</h3>
                       <p className="text-yellow-700 font-medium">Logistic Coordinator</p>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        Thaiseang is currently a fourth-year student at IFL and also works part-time at a company. He has a deep 
-                        passion for dogs and is dedicated to learning more about their behavior, training, health, and well-being. 
+                        Thaiseang is currently a fourth-year student at IFL and also works part-time at a company. He has a deep
+                        passion for dogs and is dedicated to learning more about their behavior, training, health, and well-being.
                         He hopes to raise awareness about responsible pet ownership.
                       </p>
                     </div>
@@ -307,9 +307,9 @@ function App() {
                       <h3 className="text-xl font-bold">Cheam Norakpanha</h3>
                       <p className="text-yellow-700 font-medium">Operation Coordinator</p>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        Norakpanha is a senior student at the IFL, RUPP. With a strong passion for project coordination, he is dedicated 
-                        to creating impactful initiatives, including raising awareness about the dog meat trade and supporting animal welfare. 
-                        He is excited to collaborate humane treatment of animals and share meaningful experiences with those committed to making 
+                        Norakpanha is a senior student at the IFL, RUPP. With a strong passion for project coordination, he is dedicated
+                        to creating impactful initiatives, including raising awareness about the dog meat trade and supporting animal welfare.
+                        He is excited to collaborate humane treatment of animals and share meaningful experiences with those committed to making
                         a difference for animal welfare.
                       </p>
                     </div>
@@ -332,8 +332,8 @@ function App() {
                       <h3 className="text-xl font-bold">Ngoun Panhapich</h3>
                       <p className="text-yellow-700 font-medium">Project Finance Manager</p>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        Panhapich is a senior student at Institute of Foreign Languages in Department Of English, and also a Senior Student at Royal 
-                        University of Law and Economics. She is a dedicated and a Team Player who strives and eager to take part in a Tail of Hope Project. 
+                        Panhapich is a senior student at Institute of Foreign Languages in Department Of English, and also a Senior Student at Royal
+                        University of Law and Economics. She is a dedicated and a Team Player who strives and eager to take part in a Tail of Hope Project.
                         She is committed to raise health awareness of consuming dog meat and is strongly against the trading of dog meat.
                       </p>
                     </div>
@@ -356,8 +356,8 @@ function App() {
                       <h3 className="text-xl font-bold">Sok Michell</h3>
                       <p className="text-yellow-700 font-medium">Marketing and Communication Lead</p>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        This is Michell, a senior at IFL. It is hard to believe that the action of trading and eating dog meat still continues 
-                        these days. So at the end of this project, I would want to see the decline of this activity as well as the number of strays. 
+                        This is Michell, a senior at IFL. It is hard to believe that the action of trading and eating dog meat still continues
+                        these days. So at the end of this project, I would want to see the decline of this activity as well as the number of strays.
                       </p>
                     </div>
                   </div>
@@ -379,15 +379,15 @@ function App() {
                       <h3 className="text-xl font-bold">Bun Chandalys</h3>
                       <p className="text-yellow-700 font-medium">Marketing and Communication lead</p>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        Dalys is a senior student at IFL who dedicated in her studying and thriving for the better future of the society. Though 
-                        she is a bit afraid of canines, but the way she values canines’ life has shown in her action in participating in this project 
-                        “A Tail of Hope.” She is excited to help raising awareness to the citizen to have compassionate  for stray dog and support rescuing 
-                        dog for new shelters.  
+                        Dalys is a senior student at IFL who dedicated in her studying and thriving for the better future of the society. Though
+                        she is a bit afraid of canines, but the way she values canines’ life has shown in her action in participating in this project
+                        “A Tail of Hope.” She is excited to help raising awareness to the citizen to have compassionate  for stray dog and support rescuing
+                        dog for new shelters.
                       </p>
                     </div>
                   </div>
                 </div>
-                
+
               </div>
             </div>
           </section>
@@ -744,25 +744,21 @@ function App() {
               <p className="text-sm text-gray-500 text-center md:text-left">
                 © 2025 A Tail of Hope | All rights reserved.
               </p>
-              <div className="flex items-center space-x-4">
-                <Link to="#" className="text-gray-400 hover:text-emerald-600 transition-colors">
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-                  </svg>
-                  <span className="sr-only">Twitter</span>
-                </Link>
-                <Link to="#" className="text-gray-400 hover:text-emerald-600 transition-colors">
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
-                  </svg>
-                  <span className="sr-only">Facebook</span>
-                </Link>
-                <Link to="#" className="text-gray-400 hover:text-emerald-600 transition-colors">
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z" />
-                  </svg>
-                  <span className="sr-only">Instagram</span>
-                </Link>
+              <div className="flex items-center space-x-3">
+                {/* Facebook */}
+                <a href="https://www.facebook.com/profile.php?id=61574791874658" className="transition-colors !mr-0" target="_blank" rel="noopener noreferrer">
+                  <i className="fi fi-brands-facebook text-gray-400 hover:text-yellow-700 text-xl h-8 w-8"></i>
+                </a>
+
+                {/* Instagram */}
+                <a href="https://www.instagram.com/a_tailofhope?igsh=d2R6bzB3Nms2eWp2" className="transition-colors !ml-0" target="_blank" rel="noopener noreferrer">
+                  <i className="fi fi-brands-instagram text-gray-400 hover:text-yellow-700 text-xl h-8 w-8 mx-6"></i>
+                </a>
+
+                {/* TikTok */}
+                <a href="https://www.tiktok.com/@atailofhope_official" className="transition-colors !ml-0" target="_blank" rel="noopener noreferrer">
+                  <i className="fi fi-brands-tik-tok text-gray-400 hover:text-yellow-700 text-xl h-8 w-8"></i>
+                </a>
               </div>
             </div>
           </div>
