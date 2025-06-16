@@ -69,36 +69,41 @@ function App() {
               <div className="md:hidden">
                 <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t">
                   <Link
-                    to="#about"
+                    to="about"
+                    smooth={true} duration={500}
                     className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     About
                   </Link>
                   <Link
-                    to="#team"
+                    to="team"
+                    smooth={true} duration={500}
                     className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Team
                   </Link>
                   <Link
-                    to="#issue"
+                    to="issue"
+                    smooth={true} duration={500}
                     className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     The Issue
                   </Link>
                   <Link
-                    to="#mission"
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:yellow-700"
+                    to="mission"
+                    smooth={true} duration={500}
+                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Our Mission
                   </Link>
                   <Link
-                    to="#contact"
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:yellow-700"
+                    to="contact"
+                    smooth={true} duration={500}
+                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Contact
