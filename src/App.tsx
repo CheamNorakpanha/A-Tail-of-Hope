@@ -1,7 +1,16 @@
 import './App.css';
-import { ChevronRight, Heart, Shield, Users, Menu, X } from "lucide-react"
-import { useState } from "react"
-import { Link } from 'react-scroll'
+import { Heart, Shield, Users } from "lucide-react";
+import { useState } from "react";
+import Logo from './components/header/Logo';
+import DesktopNavBar from './components/header/DesktopNav';
+import MobileMenuButton from './components/header/MobileMenuButton';
+import RightSideButton from './components/header/RightSideButton';
+import MobileNav from './components/header/MobileNav';
+
+import Hero from './components/section/Hero';
+import About from './components/section/About';
+import Team from './components/section/Team';
+
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,390 +21,37 @@ function App() {
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
-              <div className="flex items-center">
-                <Link
-                  smooth={true}
-                  duration={500}
-                  className="flex items-center space-x-2"
-                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                >
-                  <img
-                    alt='A Tail of Hope Logo'
-                    src={require('./atoh_logo_removebg.png')}
-                    className='h-12 w-12'
-                  />
-                  <span className="text-lg font-bold transition-colors hover:text-yellow-700">A Tail of Hope</span>
-                </Link>
-              </div>
+
+              {/* Logo */}
+              <Logo />
 
               {/* Desktop Navigation */}
-              <nav className="hidden md:flex items-center space-x-8">
-                <Link to="about" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-yellow-700 mr-0">
-                  About
-                </Link>
-                <Link to="team" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-yellow-700">Team
-                </Link>
-                <Link to="issue" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-yellow-700">
-                  The Issue
-                </Link>
-                <Link to="mission" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-yellow-700">
-                  Our Mission
-                </Link>
-                <Link to="contact" smooth={true} duration={500} className="text-md font-medium transition-colors hover:text-yellow-700">
-                  Contact
-                </Link>
-              </nav>
+              <DesktopNavBar />
 
-              <div className="hidden md:flex items-center">
-                <Link to="get-involved" smooth={true} duration={500} >
-                  <button className="border-yellow-700 bg-yellow-700 text-white hover:bg-yellow-800 px-6 py-2 rounded-md font-medium transition-colors">Get Involved</button>
-                </Link>
-              </div>
+              {/* Right side buttons - Get Involved Button */}
+              <RightSideButton />
 
               {/* Mobile menu button */}
-              <div className="md:hidden">
-                <button
-                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                  aria-label="Toggle menu"
-                  className="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-700"
-                >
-                  {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                </button>
-              </div>
+              <MobileMenuButton />
+
             </div>
 
             {/* Mobile Navigation */}
             {mobileMenuOpen && (
-              <div className="md:hidden">
-                <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t">
-                  <Link
-                    to="about"
-                    smooth={true} duration={500}
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    About
-                  </Link>
-                  <Link
-                    to="team"
-                    smooth={true} duration={500}
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Team
-                  </Link>
-                  <Link
-                    to="issue"
-                    smooth={true} duration={500}
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    The Issue
-                  </Link>
-                  <Link
-                    to="mission"
-                    smooth={true} duration={500}
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Our Mission
-                  </Link>
-                  <Link
-                    to="contact"
-                    smooth={true} duration={500}
-                    className="block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-700"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Contact
-                  </Link>
-                  <div className="px-3 py-2">
-                    <button className="w-full border-yellow-700 bg-yellow-700 text-white hover:bg-yellow-800 px-6 py-2 rounded-md font-medium transition-colors">Get Involved</button>
-                  </div>
-                </div>
-              </div>
+              <MobileNav setMobileMenuOpen={setMobileMenuOpen} />
             )}
           </div>
         </header>
 
         <main className="flex-1">
           {/* Hero Section */}
-          <section className="w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-yellow-50">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
-                <div className="flex flex-col justify-center space-y-6">
-                  <div className="space-y-4">
-                    <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-                      Protecting Canine Lives in Cambodia
-                    </h1>
-                    <p className="text-lg text-gray-600 sm:text-xl max-w-2xl">
-                      A research initiative raising awareness about the dog meat trade in Kampot Province and promoting
-                      canine welfare.
-                    </p>
-                  </div>
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Link to="about" smooth={true} duration={500} >
-                      <button className="bg-yellow-700 text-white px-10 py-2 rounded-md font-medium hover:bg-yellow-800 transition-colors flex items-center justify-center">
-                        Learn More
-                        <ChevronRight className="ml-4 h-4 w-4" />
-                      </button>
-                    </Link>
-                    <Link to="get-involved" smooth={true} duration={500} >
-                      <button className="border border-yellow-700 text-yellow-700 bg-white hover:bg-yellow-50 px-6 py-2 rounded-md font-medium transition-colors">
-                        Support Our Project
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                <div className="order-first lg:order-last">
-                  <div className="aspect-video w-full overflow-hidden rounded-xl">
-                    <img
-                      src="https://www.edinburghnews.scotsman.com/webimg/b25lY21zOmU0NTEwMDUwLTcyZTEtNGQ2NS05MmE2LThhMmI4YmMzM2QzNDowYmE1ODkyNy0yZGUzLTQ1NTEtYTY5Yi01ZTg4NmJhODhhZTE=.jpg?crop=3:2,smart&trim=&width=990&quality=65&enable=upscale"
-                      width={600}
-                      height={400}
-                      alt="Hero img of Dogs"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <Hero />
 
           {/* About Section */}
-          <section id="about" className="w-full py-12 md:py-16 lg:py-20">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">About Our Initiative</h2>
-                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  A Tail of Hope is a research initiative led by IFL senior students, focusing on the use of dogs for
-                  nourishment and trade in Kampot Province.
-                </p>
-              </div>
-
-              <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
-                <div className="order-2 lg:order-1">
-                  <div className="aspect-video w-full overflow-hidden rounded-xl">
-                    <img
-                      src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      width={600}
-                      height={400}
-                      alt="Students conducting research"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="order-1 lg:order-2 space-y-6">
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-bold">Our Background</h3>
-                    <p className="text-gray-600">
-                      Our initiative was founded out of concern for animal welfare and the growing issue of dog meat trade in Cambodia. Seeing its impact on animals and communities,
-                      we aim to inform the public, advocate for better regulations, and support humane treatment of dogs.
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-bold">Research Focus</h3>
-                    <p className="text-gray-600">
-                      We focus on the social, cultural, and economic factors behind the dog meat trade in Kampot Province. Our research explores public perceptions, health risks, and
-                      the emotional impact on pet owners, with the goal of offering practical solutions to reduce the trade and promote responsible pet ownership.
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-bold">Our Team</h3>
-                    <p className="text-gray-600">
-                      We are senior IFL students, united by our passion for animal welfare. Working together with local communities, animal rescue groups, and experts, we strive to
-                      ensure our research creates meaningful change.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <About />
 
           {/* Team Section */}
-          <section id="team" className="w-full py-12 md:py-16 lg:py-20 bg-gray-50">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">Our Team</h2>
-                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Meet the dedicated students behind A Tail of Hope initiative.
-                </p>
-              </div>
-
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {/* Visnow Navyra */}
-                <div className="bg-white rounded-lg p-6 shadow-sm border">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 mx-auto overflow-hidden rounded-full">
-                      <img
-                        src={require('./img/vyra.png')}
-                        width={96}
-                        height={96}
-                        alt="Visnow Navyra"
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-bold">Visnow Navyra</h3>
-                      <p className="text-yellow-700 font-medium">Leader/Project Manager</p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Navyra is a senior student at IFL and NUM, who determines in studying and joining volunteer in
-                        promoting educational programs. Currently, she is interested about understanding the value of
-                        canine life and excited to make this project come to life with her teammates. She expects to share
-                        this experience with everyone who participate in rehabilitating stray dogs in Kampot Province.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* An Sereypanharoth */}
-                <div className="bg-white rounded-lg p-6 shadow-sm border">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 mx-auto overflow-hidden rounded-full">
-                      <img
-                        src={require('./img/panharoth.png')}
-                        width={96}
-                        height={96}
-                        alt="An Sereypanharoth"
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-bold">An Sereypanharoth</h3>
-                      <p className="text-yellow-700 font-medium">Monitoring and Evaluation Officer</p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Panharoth is a student at IFL and RUPP who is strongly fighting against the dog meat trade. Concerned
-                        about the treatment of dogs, Panharoth is dedicated to raising awareness and promoting change through
-                        the Tail of Hope project. Excited to work with his team, she hopes to inspire more people to stand against
-                        the cruelty of the dog meat trade.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Sry Thaiseang */}
-                <div className="bg-white rounded-lg p-6 shadow-sm border">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 mx-auto overflow-hidden rounded-full">
-                      <img
-                        src={require('./img/thaiseang.png')}
-                        width={96}
-                        height={96}
-                        alt="Sry Thaiseang"
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-bold">Sry Thaiseang</h3>
-                      <p className="text-yellow-700 font-medium">Logistic Coordinator</p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Thaiseang is currently a fourth-year student at IFL and also works part-time at a company. He has a deep
-                        passion for dogs and is dedicated to learning more about their behavior, training, health, and well-being.
-                        He hopes to raise awareness about responsible pet ownership.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Cheam Norakpanha */}
-                <div className="bg-white rounded-lg p-6 shadow-sm border">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 mx-auto overflow-hidden rounded-full">
-                      <img
-                        src={require('./img/panha.png')}
-                        width={96}
-                        height={96}
-                        alt="Cheam Norakpanha"
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-bold">Cheam Norakpanha</h3>
-                      <p className="text-yellow-700 font-medium">Operation Coordinator</p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Norakpanha is a senior student at the IFL, RUPP. With a strong passion for project coordination, he is dedicated
-                        to creating impactful initiatives, including raising awareness about the dog meat trade and supporting animal welfare.
-                        He is excited to collaborate humane treatment of animals and share meaningful experiences with those committed to making
-                        a difference for animal welfare.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Ngoun Panhapich */}
-                <div className="bg-white rounded-lg p-6 shadow-sm border">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 mx-auto overflow-hidden rounded-full">
-                      <img
-                        src={require('./img/pich.png')}
-                        width={96}
-                        height={96}
-                        alt="Ngoun Panhapich"
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-bold">Ngoun Panhapich</h3>
-                      <p className="text-yellow-700 font-medium">Project Finance Manager</p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Panhapich is a senior student at Institute of Foreign Languages in Department Of English, and also a Senior Student at Royal
-                        University of Law and Economics. She is a dedicated and a Team Player who strives and eager to take part in a Tail of Hope Project.
-                        She is committed to raise health awareness of consuming dog meat and is strongly against the trading of dog meat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Sok Michell */}
-                <div className="bg-white rounded-lg p-6 shadow-sm border">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 mx-auto overflow-hidden rounded-full">
-                      <img
-                        src={require('./img/michell.png')}
-                        width={96}
-                        height={96}
-                        alt="Sok Michell"
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-bold">Sok Michell</h3>
-                      <p className="text-yellow-700 font-medium">Marketing and Communication Lead</p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        This is Michell, a senior at IFL. It is hard to believe that the action of trading and eating dog meat still continues
-                        these days. So at the end of this project, I would want to see the decline of this activity as well as the number of strays.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bun Chandalys */}
-                <div className="bg-white rounded-lg p-6 shadow-sm border">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 mx-auto overflow-hidden rounded-full">
-                      <img
-                        src={require('./img/dalys.png')}
-                        width={96}
-                        height={96}
-                        alt="Bun Chandalys"
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-bold">Bun Chandalys</h3>
-                      <p className="text-yellow-700 font-medium">Marketing and Communication lead</p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Dalys is a senior student at IFL who dedicated in her studying and thriving for the better future of the society. Though
-                        she is a bit afraid of canines, but the way she values canines’ life has shown in her action in participating in this project
-                        “A Tail of Hope.” She is excited to help raising awareness to the citizen to have compassionate  for stray dog and support rescuing
-                        dog for new shelters.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </section>
+          <Team />
 
           {/* Issue Section */}
           <section id="issue" className="w-full py-12 md:py-16 lg:py-20 bg-yellow-50">
