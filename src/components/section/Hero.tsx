@@ -18,13 +18,13 @@ const Hero: React.FC = () => {
                             </p>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link to="about" smooth={true} duration={500}>
+                            <Link to="about" smooth={true} duration={500} offset={-65}>
                                 <button className="bg-yellow-700 text-white px-10 py-2 rounded-md font-medium hover:bg-yellow-800 transition-colors flex items-center justify-center">
                                     Learn More
                                     <ChevronRight className="ml-4 h-4 w-4" />
                                 </button>
                             </Link>
-                            <Link to="get-involved" smooth={true} duration={500}>
+                            <Link to="get-involved" smooth={true} duration={500} offset={-65}>
                                 <button className="border border-yellow-700 text-yellow-700 bg-white hover:bg-yellow-50 px-6 py-2 rounded-md font-medium transition-colors">
                                     Support Our Project
                                 </button>
