@@ -1,8 +1,8 @@
 import { Link } from "react-scroll"
 
-function Logo() {
+export default function Logo() {
     return (
-        <div className="flex items-center cursor-pointer">
+        <div className="flex items-center">
             <Link
                 smooth={true}
                 duration={500}
@@ -19,5 +19,3 @@ function Logo() {
         </div>
     )
 }
-
-export default Logo

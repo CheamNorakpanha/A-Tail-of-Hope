@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import { X, Menu } from 'lucide-react'
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
-function MobileMenuButton() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+export default function MobileMenuButton() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
         <div className="md:hidden">
@@ -14,7 +14,5 @@ function MobileMenuButton() {
                 {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
         </div>
-    )
+    );
 }
-
-export default MobileMenuButton

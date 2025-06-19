@@ -11,6 +11,7 @@ function Feedback() {
                     </p>
                 </div>
 
+                {/* Feedback 1 */}
                 <div className="grid gap-8 lg:grid-cols-2 mb-8">
                     <div className="bg-white rounded-lg p-6 shadow-sm border">
                         <div className="space-y-4">
@@ -38,6 +39,7 @@ function Feedback() {
                         </div>
                     </div>
 
+                    {/* Feedback 2 */}
                     <div className="bg-white rounded-lg p-6 shadow-sm border">
                         <div className="space-y-4">
                             <div className="text-yellow-700">
@@ -65,11 +67,11 @@ function Feedback() {
                     </div>
                 </div>
 
-                <div className="text-center">
+                {/* <div className="text-center">
                     <button className="border border-yellow-700 text-yellow-700 bg-white hover:bg-yellow-50 px-6 py-2 rounded-md font-medium transition-colors">
                         Share Your Feedback
                     </button>
-                </div>
+                </div> */}
             </div>
         </section>
     )

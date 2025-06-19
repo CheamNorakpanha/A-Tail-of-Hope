@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import { ChevronRight } from 'lucide-react';
 
-const Hero: React.FC = () => {
+function Hero() {
     return (
         <section className="w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-yellow-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Hero;
+export default Hero

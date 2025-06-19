@@ -1,11 +1,6 @@
 import './App.css';
-import { useState } from "react";
-import Logo from './components/header/Logo';
-import DesktopNavBar from './components/header/DesktopNav';
-import MobileMenuButton from './components/header/MobileMenuButton';
-import RightSideButton from './components/header/RightSideButton';
-import MobileNav from './components/header/MobileNav';
 
+import Header from './components/header/Header';
 import Hero from './components/section/Hero';
 import About from './components/section/About';
 import Team from './components/section/Team';
@@ -13,38 +8,19 @@ import Issue from './components/section/Issue';
 import Mission from './components/section/Mission';
 import GetInvolved from './components/section/GetInvolved';
 import Feedback from './components/section/Feedback';
+import Gallery from './components/section/Gallery';
 import Contact from './components/section/Contact';
 import Footer from './components/footer/Footer';
 
 function App() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <>
       <div className="flex flex-col min-h-screen">
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center justify-between">
 
-              {/* Logo */}
-              <Logo />
+          {/* Header */}
+          <Header />
 
-              {/* Desktop Navigation */}
-              <DesktopNavBar />
-
-              {/* Right side buttons - Get Involved Button */}
-              <RightSideButton />
-
-              {/* Mobile menu button */}
-              <MobileMenuButton />
-
-            </div>
-
-            {/* Mobile Navigation */}
-            {mobileMenuOpen && (
-              <MobileNav setMobileMenuOpen={setMobileMenuOpen} />
-            )}
-          </div>
         </header>
 
         <main className="flex-1">
@@ -68,6 +44,9 @@ function App() {
 
           {/* Feedback Section */}
           <Feedback />
+
+          {/* Photo Gallery Section */}
+          <Gallery />
 
           {/* Contact Section */}
           <Contact />

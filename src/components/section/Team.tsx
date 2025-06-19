@@ -1,5 +1,3 @@
-// src/components/team/Team.tsx
-
 import React from 'react';
 
 const teamMembers = [
