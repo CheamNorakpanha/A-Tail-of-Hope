@@ -1,5 +1,5 @@
 import './App.css';
-import { Heart, Shield, Users } from "lucide-react";
+import { Frown, HeartPulse, Scale } from "lucide-react";
 import { useState } from "react";
 import Logo from './components/header/Logo';
 import DesktopNavBar from './components/header/DesktopNav';
@@ -59,41 +59,39 @@ function App() {
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">The Issue</h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Understanding the dog meat trade in Kampot Province and its implications.
+                  The dog meat trade in Cambodia raises concerns related to health, emotional well-being, and the limited presence of clear regulations.
+                  This practice continues in some communities and may affect both people and animals in different ways.
                 </p>
               </div>
 
               <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-12">
                 <div className="bg-white rounded-lg p-6 shadow-sm border text-center">
                   <div className="w-12 h-12 mx-auto mb-4 bg-yellow-100 rounded-full flex items-center justify-center">
-                    <Shield className="h-6 w-6 text-yellow-600" />
+                    <HeartPulse className="h-6 w-6 text-yellow-600" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">Health Risks</h3>
                   <p className="text-gray-600">
-                    Dog meat consumption poses significant health risks, including the transmission of rabies and other
-                    zoonotic diseases.
+                    Dog meat consumption can spread rabies and other diseases, especially when hygiene and safety standards are lacking.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-lg p-6 shadow-sm border text-center">
                   <div className="w-12 h-12 mx-auto mb-4 bg-yellow-100 rounded-full flex items-center justify-center">
-                    <Heart className="h-6 w-6 text-yellow-600" />
+                    <Frown className="h-6 w-6 text-yellow-600" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">Emotional Impact</h3>
                   <p className="text-gray-600">
-                    The dog meat trade has a profound emotional impact on pet owners who lose their companions to this
-                    practice.
+                    Many families experience distress when their pets are taken or lost to the trade, as dogs are often seen as companions.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-lg p-6 shadow-sm border text-center sm:col-span-2 lg:col-span-1">
                   <div className="w-12 h-12 mx-auto mb-4 bg-yellow-100 rounded-full flex items-center justify-center">
-                    <Users className="h-6 w-6 text-yellow-600" />
+                    <Scale className="h-6 w-6 text-yellow-600" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">Lack of Regulation</h3>
                   <p className="text-gray-600">
-                    The absence of proper regulations allows the dog meat trade to continue unchecked, endangering both
-                    animals and public health.
+                    The absence of clear laws and enforcement allows the trade to continue, raising concerns for both animal welfare and public health.
                   </p>
                 </div>
               </div>
