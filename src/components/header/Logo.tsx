@@ -12,9 +12,9 @@ export default function Logo() {
                 <img
                     alt='A Tail of Hope Logo'
                     src={require('../../atoh_logo_removebg.png')}
-                    className='h-12 w-12'
+                    className='h-12 w-12 cursor-pointer'
                 />
-                <span className="text-lg font-bold transition-colors hover:text-yellow-700 md:hidden lg:inline">A Tail of Hope</span>
+                <span className="text-lg font-bold transition-colors hover:text-yellow-700 md:hidden lg:inline cursor-pointer">A Tail of Hope</span>
             </Link>
         </div>
     )
