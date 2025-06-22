@@ -3,8 +3,7 @@ import React, { useState } from 'react'
 import { X } from 'lucide-react'
 
 function GetInvolved() {
-    const [isModalOpen, setIsModalOpen] = useState(false)
-
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <section id="get-involved" className="w-full py-12 md:py-16 lg:py-20 bg-yellow-50">
