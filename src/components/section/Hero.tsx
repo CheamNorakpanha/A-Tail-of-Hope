@@ -1,8 +1,16 @@
-import React from 'react';
 import { Link } from 'react-scroll';
 import { ChevronRight } from 'lucide-react';
+import Carousel from './Carousel';
 
 function Hero() {
+
+    const slides = [
+        "https://www.edinburghnews.scotsman.com/webimg/b25lY21zOmU0NTEwMDUwLTcyZTEtNGQ2NS05MmE2LThhMmI4YmMzM2QzNDowYmE1ODkyNy0yZGUzLTQ1NTEtYTY5Yi01ZTg4NmJhODhhZTE=.jpg?crop=3:2,smart&trim=&width=990&quality=65&enable=upscale",
+        "https://media.4-paws.org/a/f/d/7/afd77b1dd1052efc4b371d14841b42ae964b354e/VIER%20PFOTEN_2019-02-14_089-2890x2000-1920x1329.webp",
+        "https://jspca.org.il/wp-content/uploads/2024/11/WhatsApp-Image-2024-10-28-at-10.50.09.jpeg",
+        "https://people.com/thmb/ACXF8uZNFlZqbArP0tuXfYaCyDI=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/dog-meat-rescue-1-1-2000-ea3a7deeaf7e4f43b55fffae21de2f75.jpg",
+    ]
+
     return (
         <section className="w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-yellow-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,15 +39,14 @@ function Hero() {
                             </Link>
                         </div>
                     </div>
+
                     <div className="order-first lg:order-last">
                         <div className="aspect-video w-full overflow-hidden rounded-xl">
-                            <img
-                                src="https://www.edinburghnews.scotsman.com/webimg/b25lY21zOmU0NTEwMDUwLTcyZTEtNGQ2NS05MmE2LThhMmI4YmMzM2QzNDowYmE1ODkyNy0yZGUzLTQ1NTEtYTY5Yi01ZTg4NmJhODhhZTE=.jpg?crop=3:2,smart&trim=&width=990&quality=65&enable=upscale"
-                                width={600}
-                                height={400}
-                                alt="Hero img of Dogs"
-                                className="h-full w-full object-cover"
-                            />
+                            <Carousel autoSlide={true} autoSlideInterval={3000}>
+                                {slides.map((s) => (
+                                    <img src={s} alt="images with slides" className="h-full w-full object-cover" width={600} height={400} />
+                                ))}
+                            </Carousel>
                         </div>
                     </div>
                 </div>
