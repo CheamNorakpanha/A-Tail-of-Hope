@@ -11,8 +11,9 @@ function Feedback() {
                     </p>
                 </div>
 
-                {/* Feedback 1 */}
-                <div className="grid gap-8 lg:grid-cols-2 mb-8">
+                <div className="grid gap-8 lg:grid-cols-3 mb-8">
+
+                    {/* Feedback 1 */}
                     <div className="bg-white rounded-lg p-6 shadow-sm border">
                         <div className="space-y-4">
                             <div className="text-yellow-700">
@@ -21,19 +22,16 @@ function Feedback() {
                                 </svg>
                             </div>
                             <blockquote className="text-gray-700 leading-relaxed">
-                                "A Tail of Hope is an inspiring student-led initiative that shines a light on a deeply overlooked
-                                issue in Cambodia. Their compassionate approach, rooted in research and community involvement, is
-                                exactly what's needed to change attitudes and protect animals. By raising awareness and working
-                                alongside local partners, they're planting the seeds for real, lasting change. I'm excited to see
-                                how far their impact will reach."
+                                "A Tail of Hope is doing essential work by addressing the emotional and health impacts of the dog meat trade. Their focus on Kampot brings much-needed 
+                                attention to an issue that’s often ignored. Their efforts show that change can start with awareness and compassion."
                             </blockquote>
                             <div className="flex items-center space-x-3">
                                 <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
-                                    <span className="text-yellow-700 font-semibold">S</span>
+                                    <span className="text-yellow-700 font-semibold">DP</span>
                                 </div>
                                 <div>
-                                    <p className="font-semibold">Sokun</p>
-                                    <p className="text-sm text-gray-500">Animal welfare advocate and volunteer</p>
+                                    <p className="font-semibold">Dirty Paw</p>
+                                    <p className="text-sm text-gray-500">Animal Welfare Partner</p>
                                 </div>
                             </div>
                         </div>
@@ -48,30 +46,45 @@ function Feedback() {
                                 </svg>
                             </div>
                             <blockquote className="text-gray-700 leading-relaxed">
-                                "If you're passionate about animal welfare and want to support a cause led by compassionate young
-                                changemakers, A Tail of Hope is a fantastic initiative to get behind. Whether it's joining their
-                                awareness campaigns, volunteering at events, or supporting their outreach in Kampot, there's a
-                                meaningful way for everyone to contribute. Their dedication and collaboration with communities like
-                                Dirty Paw Cambodia truly set them apart."
+                                "This project highlights a difficult topic with sensitivity and purpose. A Tail of Hope balances research with real community outreach, and that makes 
+                                their message stronger. It’s a powerful example of how students can drive social change."
                             </blockquote>
                             <div className="flex items-center space-x-3">
                                 <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
-                                    <span className="text-yellow-700 font-semibold">R</span>
+                                    <span className="text-yellow-700 font-semibold">TS</span>
                                 </div>
                                 <div>
-                                    <p className="font-semibold">Rithy</p>
-                                    <p className="text-sm text-gray-500">Volunteer and youth mentor</p>
+                                    <p className="font-semibold">Thann Sopheakboth</p>
+                                    <p className="text-sm text-gray-500">Tail of Hope Supporter</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Feedback 3 */}
+                    <div className="bg-white rounded-lg p-6 shadow-sm border">
+                        <div className="space-y-4">
+                            <div className="text-yellow-700">
+                                <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
+                                </svg>
+                            </div>
+                            <blockquote className="text-gray-700 leading-relaxed">
+                                "A Tail of Hope is more than just a research project. Tt’s a voice for the voiceless. Their initiative sheds light on the hidden costs of the dog meat 
+                                trade and advocates for humane treatment of animals. I truly admire their dedication."
+                            </blockquote>
+                            <div className="flex items-center space-x-3">
+                                <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                                    <span className="text-yellow-700 font-semibold">VI</span>
+                                </div>
+                                <div>
+                                    <p className="font-semibold">Vey Iengveng</p>
+                                    <p className="text-sm text-gray-500">Animal lover</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                {/* <div className="text-center">
-                    <button className="border border-yellow-700 text-yellow-700 bg-white hover:bg-yellow-50 px-6 py-2 rounded-md font-medium transition-colors">
-                        Share Your Feedback
-                    </button>
-                </div> */}
             </div>
         </section>
     )
