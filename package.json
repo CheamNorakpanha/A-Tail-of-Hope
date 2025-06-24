@@ -12,8 +12,6 @@
     "@types/node": "^16.18.126",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.6",
-    "flowbite": "^3.1.2",
-    "flowbite-react": "^0.4.7",
     "lucide-react": "^0.513.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
