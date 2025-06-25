@@ -4,7 +4,7 @@ const teamMembers = [
     {
         name: 'Visnow Navyra',
         role: 'Leader/Project Manager',
-        image: require('../../img/vyra.png'),
+        image: require('../../img/team/vyra.png'),
         alt: 'Visnow Navyra',
         description:
             'Navyra, a senior at IFL and NUM, is passionate about education and volunteering. She’s currently leading a project to promote the value of canine life and looks forward to sharing the experience of rehabilitating stray dogs in Kampot with her teammates and participants.',
@@ -12,7 +12,7 @@ const teamMembers = [
     {
         name: 'An Sereypanharoth',
         role: 'Monitoring and Evaluation Officer',
-        image: require('../../img/panharoth.png'),
+        image: require('../../img/team/panharoth.png'),
         alt: 'An Sereypanharoth',
         description:
             'Panharoth, a student at IFL and RUPP, is dedicated to fighting the dog meat trade. Through the Tail of Hope project, she aims to raise awareness and inspire others to stand against cruelty to dogs.',
@@ -20,7 +20,7 @@ const teamMembers = [
     {
         name: 'Sry Thaiseang',
         role: 'Logistic Coordinator',
-        image: require('../../img/thaiseang.png'),
+        image: require('../../img/team/thaiseang.png'),
         alt: 'Sry Thaiseang',
         description:
             'Thaiseang, a fourth-year IFL student and part-time worker, is passionate about dogs and eager to learn more about their care. He hopes to promote responsible pet ownership.',
@@ -28,7 +28,7 @@ const teamMembers = [
     {
         name: 'Cheam Norakpanha',
         role: 'Operation Coordinator',
-        image: require('../../img/panha.png'),
+        image: require('../../img/team/panha.png'),
         alt: 'Cheam Norakpanha',
         description:
             'Norakpanha, a senior at IFL, RUPP, is passionate about project coordination and animal welfare. He is committed to raising awareness about the dog meat trade and looks forward to collaborating on impactful initiatives for humane animal treatment.',
@@ -36,7 +36,7 @@ const teamMembers = [
     {
         name: 'Ngoun Panhapich',
         role: 'Project Finance Manager',
-        image: require('../../img/pich.png'),
+        image: require('../../img/team/pich.png'),
         alt: 'Ngoun Panhapich',
         description:
             'Panhapich, a senior at IFL and RULE, is a dedicated team player eager to join the Tail of Hope Project. She is committed to raising awareness about the health risks of consuming dog meat and strongly opposes the dog meat trade.',
@@ -44,7 +44,7 @@ const teamMembers = [
     {
         name: 'Sok Michell',
         role: 'Marketing and Communication Lead',
-        image: require('../../img/michell.png'),
+        image: require('../../img/team/michell.png'),
         alt: 'Sok Michell',
         description:
             'Michell, a senior at IFL, is deeply disturbed that the dog meat trade and consumption persist today. Through this project, she is determined to see a significant reduction in both this cruel practice and the number of stray dogs.',
@@ -52,7 +52,7 @@ const teamMembers = [
     {
         name: 'Bun Chandalys',
         role: 'Marketing and Communication lead',
-        image: require('../../img/dalys.png'),
+        image: require('../../img/team/dalys.png'),
         alt: 'Bun Chandalys',
         description:
             'Dalys, a senior at IFL, is committed to a better society. Despite her fear of dogs, she values their lives and eagerly joins the "Tail of Hope" project to raise awareness and support rescuing stray dogs.',

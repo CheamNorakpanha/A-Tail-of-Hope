@@ -1,6 +1,15 @@
 import React from 'react'
+import Carousel from './Carousel';
 
 function Mission() {
+
+    const slides = [
+        "https://www.dogstrust.org.uk/images/800x600/assets/2023-05/Cambodia%20header.jpg",
+        "https://media.4-paws.org/e/9/6/6/e966c50092f59fbb810a57a0547576f8e30097ff/1X8A5862-3000x1688.jpg",
+        "https://media.4-paws.org/b/f/6/2/bf62f9d01f25850f9157c6b87287f7b9457232ac/VIER%20PFOTEN_2018-12-04_199-4000x2770-1920x1330.jpg",
+        "https://i.ytimg.com/vi/wYwWJT0JFuA/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgUihCMA8=&rs=AOn4CLDZ9muUXjdZyO0OWiOoMuGTYj9ZFA",
+    ]
+
     return (
         <section id="mission" className="w-full py-12 md:py-16 lg:py-20 bg-gray-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,7 +45,7 @@ function Mission() {
                         </div>
                     </div>
 
-                    <div className="order-first lg:order-last">
+                    {/* <div className="order-first lg:order-last">
                         <div className="aspect-video w-full overflow-hidden rounded-xl">
                             <img
                                 src="https://diamondpet.storage.googleapis.com/wp-content/uploads/2023/02/06151608/dog-giving-paw-042418.jpg"
@@ -45,6 +54,16 @@ function Mission() {
                                 alt="Dogs being rescued"
                                 className="h-full w-full object-cover"
                             />
+                        </div>
+                    </div> */}
+
+                    <div className="order-first lg:order-last">
+                        <div className="aspect-video w-full overflow-hidden rounded-xl">
+                            <Carousel autoSlide={true} autoSlideInterval={3000}>
+                                {slides.map((s) => (
+                                    <img src={s} alt="images with slides" className="h-full w-full object-cover" width={600} height={400} />
+                                ))}
+                            </Carousel>
                         </div>
                     </div>
                 </div>

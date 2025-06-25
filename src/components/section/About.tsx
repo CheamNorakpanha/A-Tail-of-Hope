@@ -18,7 +18,7 @@ const About: React.FC = () => {
                     <div className="order-2 lg:order-1">
                         <div className="aspect-video w-full overflow-hidden rounded-xl">
                             <img
-                                src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                src={require('../../atoh_crew.png')}
                                 width={600}
                                 height={400}
                                 alt="Students conducting research"
