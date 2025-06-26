@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Feedback() {
     return (
         <section className="w-full py-12 md:py-16 lg:py-20">

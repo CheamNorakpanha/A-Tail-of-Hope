@@ -1,4 +1,3 @@
-import React from 'react'
 import { HeartPulse, Frown, Scale } from 'lucide-react'
 
 function Issue() {
