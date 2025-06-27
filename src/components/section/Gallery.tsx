@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from 'framer-motion'
 
 interface GalleryImage {
     src: string;
@@ -45,20 +46,36 @@ const Gallery: React.FC = () => {
         <section className="w-full py-12 md:py-16 lg:py-20 bg-gray-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
+                    <motion.h2
+                        className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4"
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         Our Activities
-                    </h2>
-                    <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                    </motion.h2>
+                    <motion.p
+                        className="text-lg text-gray-600 max-w-3xl mx-auto"
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1.25, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         Explore the moments from our team's activities and outreach efforts
                         in Kampot Province.
-                    </p>
+                    </motion.p>
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
                     {galleryImages.map((image, index) => (
-                        <div
+                        <motion.div
                             key={index}
                             className="group relative aspect-square overflow-hidden rounded-lg bg-gray-200"
+                            initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 1, ease: "easeOut" }}
+                            viewport={{ once: true, amount: 0.6 }}
                         >
                             <img
                                 src={image.src}
@@ -67,7 +84,7 @@ const Gallery: React.FC = () => {
                                 height={300}
                                 className="h-full w-full object-cover transition-transform group-hover:scale-105"
                             />
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 

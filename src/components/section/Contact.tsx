@@ -1,16 +1,38 @@
+import { motion } from 'framer-motion'
+
 function Contact() {
     return (
         <section id="contact" className="w-full py-12 md:py-16 lg:py-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">Contact Us</h2>
-                    <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                    <motion.h2
+                        className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4"
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
+                        Contact Us
+                    </motion.h2>
+                    <motion.p
+                        className="text-lg text-gray-600 max-w-3xl mx-auto"
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1.25, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         Have questions or want to learn more about our initiative? Get in touch with us.
-                    </p>
+                    </motion.p>
                 </div>
 
                 <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-                    <div className="space-y-6">
+                    <motion.div
+                        className="space-y-6"
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         <div className="space-y-4">
                             <h3 className="text-xl font-bold">Get in Touch</h3>
                             <p className="text-gray-600">Fill out the form and we'll get back to you as soon as possible.</p>
@@ -63,9 +85,15 @@ function Contact() {
                                 <span className="text-gray-600">Russian Federation Blvd (110), Phnom Penh 120404</span>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="bg-white rounded-lg p-6 shadow-sm border">
+                    <motion.div
+                        className="bg-white rounded-lg p-6 shadow-sm border"
+                        initial={{ x: 100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         <form className="space-y-4">
                             <div className="grid gap-4 sm:grid-cols-2">
                                 <div className="space-y-2">
@@ -115,7 +143,7 @@ function Contact() {
                             </div>
                             <button className="w-full text-white bg-yellow-700 hover:bg-yellow-800 px-6 py-2 rounded-md font-medium transition-colors">Send Message</button>
                         </form>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
