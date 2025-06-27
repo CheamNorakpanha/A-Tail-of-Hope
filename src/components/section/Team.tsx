@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const teamMembers = [
     {
@@ -63,16 +64,37 @@ const Team: React.FC = () => {
     return (
         <section id="team" className="w-full py-12 md:py-16 lg:py-20 bg-gray-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">Our Team</h2>
-                    <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                <motion.div className="text-center mb-12">
+                    <motion.h2
+                        className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4"
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
+                        Our Team
+                    </motion.h2>
+                    <motion.p
+                        className="text-lg text-gray-600 max-w-3xl mx-auto"
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1.25, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         Meet the dedicated students behind A Tail of Hope initiative.
-                    </p>
-                </div>
+                    </motion.p>
+                </motion.div>
 
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {teamMembers.map((member, index) => (
-                        <div key={index} className="bg-white rounded-lg p-6 shadow-sm border">
+                        <motion.div
+                            key={index}
+                            className="bg-white rounded-lg p-6 shadow-sm border"
+                            initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 1.25, ease: "easeOut" }}
+                            viewport={{ once: true, amount: 0.6 }}
+                        >
                             <div className="text-center space-y-4">
                                 <div className="w-24 h-24 mx-auto overflow-hidden rounded-full">
                                     <img
@@ -89,7 +111,7 @@ const Team: React.FC = () => {
                                     <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
