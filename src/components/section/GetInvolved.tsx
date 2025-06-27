@@ -130,7 +130,7 @@ function GetInvolved() {
 
                             <div className="w-full flex justify-center items-center">
                                 <img
-                                    src={require('../../donation_poster.jpg')}
+                                    src={require('../../img/donation/donation_poster.jpg')}
                                     alt="Donation Information - Every cents of your donation matter"
                                     className="w-full max-w-[95%] h-auto rounded-lg border object-contain"
                                 />

@@ -31,7 +31,7 @@ const About: React.FC = () => {
                     <div className="order-2 lg:order-1">
                         <div className="aspect-video w-full overflow-hidden rounded-xl">
                             <motion.img
-                                src={require('../../atoh_crew.png')}
+                                src={require('../../img/team/atoh_crew.png')}
                                 width={600}
                                 height={400}
                                 alt="Students conducting research"
