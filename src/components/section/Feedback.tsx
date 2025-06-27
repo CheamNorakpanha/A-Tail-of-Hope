@@ -1,18 +1,40 @@
+import { motion } from 'framer-motion'
+
 function Feedback() {
     return (
         <section className="w-full py-12 md:py-16 lg:py-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">What People Are Saying</h2>
-                    <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                    <motion.h2
+                        className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4"
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
+                        What People Are Saying
+                    </motion.h2>
+                    <motion.p
+                        className="text-lg text-gray-600 max-w-3xl mx-auto"
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1.25, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         Hear from supporters, volunteers, and advocates who believe in our mission.
-                    </p>
+                    </motion.p>
                 </div>
 
                 <div className="grid gap-8 lg:grid-cols-3 mb-8">
 
                     {/* Feedback 1 */}
-                    <div className="bg-white rounded-lg p-6 shadow-sm border">
+                    <motion.div
+                        className="bg-white rounded-lg p-6 shadow-sm border"
+                        initial={{ y: -100, opacity: 0, scale: 0.8 }}
+                        whileInView={{ y: 0, opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         <div className="space-y-4">
                             <div className="text-yellow-700">
                                 <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
@@ -33,10 +55,16 @@ function Feedback() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Feedback 2 */}
-                    <div className="bg-white rounded-lg p-6 shadow-sm border">
+                    <motion.div
+                        className="bg-white rounded-lg p-6 shadow-sm border"
+                        initial={{ y: -100, opacity: 0, scale: 0.8 }}
+                        whileInView={{ y: 0, opacity: 1, scale: 1 }}
+                        transition={{ duration: 1.25, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         <div className="space-y-4">
                             <div className="text-yellow-700">
                                 <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
@@ -57,10 +85,16 @@ function Feedback() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Feedback 3 */}
-                    <div className="bg-white rounded-lg p-6 shadow-sm border">
+                    <motion.div
+                        className="bg-white rounded-lg p-6 shadow-sm border"
+                        initial={{ y: -100, opacity: 0, scale: 0.8 }}
+                        whileInView={{ y: 0, opacity: 1, scale: 1 }}
+                        transition={{ duration: 1.5, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         <div className="space-y-4">
                             <div className="text-yellow-700">
                                 <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
@@ -81,7 +115,7 @@ function Feedback() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

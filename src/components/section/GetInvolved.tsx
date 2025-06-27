@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { X } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 function GetInvolved() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -8,15 +9,35 @@ function GetInvolved() {
         <section id="get-involved" className="w-full py-12 md:py-16 lg:py-20 bg-yellow-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">Get Involved</h2>
-                    <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                    <motion.h2
+                        className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4"
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
+                        Get Involved
+                    </motion.h2>
+                    <motion.p
+                        className="text-lg text-gray-600 max-w-3xl mx-auto"
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1.25, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         Be a voice for the voiceless. Join us in protecting dogs and raising awareness about the dangers of the dog meat trade in Kampot Province.
-                    </p>
+                    </motion.p>
                 </div>
 
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {/* Donate Card */}
-                    <div className="bg-white rounded-lg p-6 shadow-sm border text-center">
+                    <motion.div
+                        className="bg-white rounded-lg p-6 shadow-sm border text-center"
+                        initial={{ y: 100, opacity: 0, scale: 0.8 }}
+                        whileInView={{ y: 0, opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         <h3 className="text-xl font-bold mb-3">Donate</h3>
                         <p className="text-gray-600 mb-6">
                             Your contribution helps fund research, rescue efforts, and educational outreach. Every donation brings us one step closer to lasting change.
@@ -27,10 +48,16 @@ function GetInvolved() {
                         >
                             Donate Now
                         </button>
-                    </div>
+                    </motion.div>
 
                     {/* Merchandise Card (Disabled) */}
-                    <div className="bg-white rounded-lg p-6 shadow-sm border text-center opacity-70 cursor-not-allowed select-none">
+                    <motion.div
+                        className="bg-white rounded-lg p-6 shadow-sm border text-center opacity-70 cursor-not-allowed select-none"
+                        initial={{ y: 100, opacity: 0, scale: 0.8 }}
+                        whileInView={{ y: 0, opacity: 0.7, scale: 1 }}
+                        transition={{ duration: 1.25, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         <h3 className="text-xl font-bold mb-3">Buy Our Merchandise</h3>
                         <p className="text-gray-600 mb-6">
                             Support our mission by purchasing our exclusive merch. Every item you buy helps fund our campaign and spreads the message of compassion.
@@ -41,10 +68,16 @@ function GetInvolved() {
                         >
                             Buy Now
                         </button>
-                    </div>
+                    </motion.div>
 
                     {/* Share Card */}
-                    <div className="bg-white rounded-lg p-6 shadow-sm border text-center sm:col-span-2 lg:col-span-1">
+                    <motion.div
+                        className="bg-white rounded-lg p-6 shadow-sm border text-center sm:col-span-2 lg:col-span-1"
+                        initial={{ y: 100, opacity: 0, scale: 0.8 }}
+                        whileInView={{ y: 0, opacity: 1, scale: 1 }}
+                        transition={{ duration: 1.5, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.6 }}
+                    >
                         <h3 className="text-xl font-bold mb-3">Spread the Word</h3>
                         <p className="text-gray-600 mb-6">
                             Raise awareness by sharing our cause on social media and encouraging others to get involved. Together, we can create a more humane future for animals.
@@ -59,14 +92,19 @@ function GetInvolved() {
                                 Share Now
                             </button>
                         </a>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 
             {/* Donation Modal */}
             {isModalOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
-                    <div className="relative bg-white rounded-lg w-full max-w-2xl">
+                    <motion.div className="relative bg-white rounded-lg w-full max-w-2xl"
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.5 }}
+                        transition={{ duration: 0.4, ease: "easeOut" }}
+                    >
                         <button
                             className="absolute top-4 right-4 z-10 bg-white hover:bg-gray-100 rounded-full"
                             onClick={() => setIsModalOpen(false)}
@@ -89,6 +127,7 @@ function GetInvolved() {
                                     className="h-auto max-h-[50vh] rounded-lg border object-contain"
                                 />s
                             </div> */}
+
                             <div className="w-full flex justify-center items-center">
                                 <img
                                     src={require('../../donation_poster.jpg')}
@@ -117,7 +156,7 @@ function GetInvolved() {
                                 </div>
                             </div> */}
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             )}
 
