@@ -8,36 +8,112 @@ interface GalleryImage {
 
 const galleryImages: GalleryImage[] = [
     {
-        src: "https://plus.unsplash.com/premium_photo-1734395747956-ef1bb635cab5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "Team activity in Kampot Province",
+        src: require("../../img/gallery/1.jpg"),
+        alt: "Gallery image 1",
     },
     {
-        src: "https://images.unsplash.com/photo-1661552066736-935e0cad1782?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "Community outreach program",
+        src: require("../../img/gallery/2.jpg"),
+        alt: "Gallery image 2",
     },
     {
-        src: "https://images.unsplash.com/photo-1565979748550-c1dc4e262945?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "Dog rescue operation",
+        src: require("../../img/gallery/3.jpg"),
+        alt: "Gallery image 3",
     },
     {
-        src: "https://plus.unsplash.com/premium_photo-1665952050547-fa975453ce6c?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "Educational workshop",
+        src: require("../../img/gallery/4.jpg"),
+        alt: "Gallery image 4",
     },
     {
-        src: "https://images.unsplash.com/photo-1587716463724-76559fcda1c7?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "Team meeting with local authorities",
+        src: require("../../img/gallery/5.jpg"),
+        alt: "Gallery image 5",
     },
     {
-        src: "https://plus.unsplash.com/premium_photo-1661602029674-3f7b4b71ee10?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "Awareness campaign event",
+        src: require("../../img/gallery/6.jpg"),
+        alt: "Gallery image 6",
     },
     {
-        src: "https://images.unsplash.com/photo-1709789945400-1256f7da7efb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "Collaboration with Dirty Paw Cambodia",
+        src: require("../../img/gallery/7.jpg"),
+        alt: "Gallery image 7",
     },
     {
-        src: "https://images.unsplash.com/photo-1692906456160-385d805be646?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "Research documentation",
+        src: require("../../img/gallery/8.jpg"),
+        alt: "Gallery image 8",
+    },
+    {
+        src: require("../../img/gallery/9.jpg"),
+        alt: "Gallery image 9",
+    },
+    {
+        src: require("../../img/gallery/10.jpg"),
+        alt: "Gallery image 10",
+    },
+    {
+        src: require("../../img/gallery/11.jpg"),
+        alt: "Gallery image 11",
+    },
+    {
+        src: require("../../img/gallery/12.jpg"),
+        alt: "Gallery image 12",
+    },
+    {
+        src: require("../../img/gallery/13.jpg"),
+        alt: "Gallery image 13",
+    },
+    {
+        src: require("../../img/gallery/14.jpg"),
+        alt: "Gallery image 14",
+    },
+    {
+        src: require("../../img/gallery/15.jpg"),
+        alt: "Gallery image 15",
+    },
+    {
+        src: require("../../img/gallery/16.jpg"),
+        alt: "Gallery image 16",
+    },
+    {
+        src: require("../../img/gallery/17.jpg"),
+        alt: "Gallery image 17",
+    },
+    {
+        src: require("../../img/gallery/18.jpg"),
+        alt: "Gallery image 18",
+    },
+    {
+        src: require("../../img/gallery/19.jpg"),
+        alt: "Gallery image 19",
+    },
+    {
+        src: require("../../img/gallery/20.jpg"),
+        alt: "Gallery image 20",
+    },
+    {
+        src: require("../../img/gallery/21.jpg"),
+        alt: "Gallery image 21",
+    },
+    {
+        src: require("../../img/gallery/22.jpg"),
+        alt: "Gallery image 22",
+    },
+    {
+        src: require("../../img/gallery/23.jpg"),
+        alt: "Gallery image 23",
+    },
+    {
+        src: require("../../img/gallery/24.jpg"),
+        alt: "Gallery image 24",
+    },
+    {
+        src: require("../../img/gallery/25.jpg"),
+        alt: "Gallery image 25",
+    },
+    {
+        src: require("../../img/gallery/26.jpg"),
+        alt: "Gallery image 26",
+    },
+    {
+        src: require("../../img/gallery/27.jpg"),
+        alt: "Gallery image 27",
     },
 ];
 
@@ -87,12 +163,6 @@ const Gallery: React.FC = () => {
                         </motion.div>
                     ))}
                 </div>
-
-                {/* <div className="text-center mt-8">
-                    <button className="border border-yellow-700 text-yellow-700 bg-white hover:bg-yellow-50 px-6 py-2 rounded-md font-medium transition-colors">
-                        View More Photos
-                    </button>
-                </div> */}
             </div>
         </section>
     );
