@@ -76,16 +76,6 @@ function Issue() {
                         </p>
                     </motion.div>
                 </div>
-
-                {/* <div className="text-center max-w-3xl mx-auto space-y-6">
-                <h3 className="text-2xl font-bold">Case Study: Kampot Province</h3>
-                <p className="text-gray-600">
-                  According to Khmer Times (2022), Kampot Provincial Police arrested multiple individuals for killing
-                  three huskies for meat consumption. This case highlights the ongoing issue of dog meat trade in the
-                  region.
-                </p>
-                <button className="bg-emerald-600 hover:bg-emerald-700">Read More Case Studies</button>
-              </div> */}
             </div>
         </section>
     )

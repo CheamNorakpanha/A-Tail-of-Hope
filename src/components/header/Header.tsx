@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-
 import Logo from './Logo'
+
 import DesktopNavigation from './DesktopNavigation'
 import GetInvolvedButton from './GetInvolvedButton'
 import MobileNavigation from './MobileNavigation'

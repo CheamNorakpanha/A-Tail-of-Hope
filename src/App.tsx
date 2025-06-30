@@ -1,5 +1,4 @@
 import './App.css';
-
 import Header from './components/header/Header';
 import Hero from './components/section/Hero';
 import About from './components/section/About';
@@ -55,6 +54,7 @@ function App() {
 
         {/* Footer */}
         <Footer />
+        
       </div>
     </>
   );
