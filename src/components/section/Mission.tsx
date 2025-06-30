@@ -4,10 +4,9 @@ import { motion } from 'framer-motion';
 function Mission() {
 
     const slides = [
-        "https://www.dogstrust.org.uk/images/800x600/assets/2023-05/Cambodia%20header.jpg",
-        "https://media.4-paws.org/e/9/6/6/e966c50092f59fbb810a57a0547576f8e30097ff/1X8A5862-3000x1688.jpg",
-        "https://media.4-paws.org/b/f/6/2/bf62f9d01f25850f9157c6b87287f7b9457232ac/VIER%20PFOTEN_2018-12-04_199-4000x2770-1920x1330.jpg",
-        "https://i.ytimg.com/vi/wYwWJT0JFuA/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgUihCMA8=&rs=AOn4CLDZ9muUXjdZyO0OWiOoMuGTYj9ZFA",
+        require("../../img/mission/1.jpg"),
+        require("../../img/mission/2.jpg"),
+        require("../../img/mission/3.jpg"),
     ]
 
     return (
@@ -78,21 +77,9 @@ function Mission() {
                         </div>
                     </div>
 
-                    {/* <div className="order-first lg:order-last">
-                        <div className="aspect-video w-full overflow-hidden rounded-xl">
-                            <img
-                                src="https://diamondpet.storage.googleapis.com/wp-content/uploads/2023/02/06151608/dog-giving-paw-042418.jpg"
-                                width={600}
-                                height={400}
-                                alt="Dogs being rescued"
-                                className="h-full w-full object-cover"
-                            />
-                        </div>
-                    </div> */}
-
                     <div className="order-first lg:order-last">
                         <motion.div
-                            className="aspect-video w-full overflow-hidden rounded-xl"
+                            className="aspect-video w-full overflow-hidden rounded-xl flex items-center justify-center"
                             initial={{ x: 100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, ease: "easeOut" }}
@@ -100,7 +87,7 @@ function Mission() {
                         >
                             <Carousel autoSlide={true} autoSlideInterval={3000}>
                                 {slides.map((s) => (
-                                    <img src={s} alt="images with slides" className="h-full w-full object-cover" width={600} height={400} />
+                                    <img src={s} alt="images with slides" className="h-full w-full object-cover max-h-full max-w-full" width={600} height={400} />
                                 ))}
                             </Carousel>
                         </motion.div>
